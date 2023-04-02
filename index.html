@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather App | By Shivam</title>
+    <link rel="icon" href="images/favicon.jpg" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <div class="search-box">
+            <input type="text" class="input-box" placeholder="Enter City Name" spellcheck="false">
+            <button id="searchBtn"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+
+        <!-- when location not found -->
+        <div class="location-not-found">
+            <h2>Sorry, Location Not Found !!!</h2>
+            <img src="images/404.png" alt="Image">
+        </div>
+
+        <div class="weather-body">
+            <img src="images/cloud.svg" alt="Weather Image" class="weather-img">
+            
+            <div class="temperature-box">
+                <p class="temperature">25<sup>°C</sup></p>
+                <p class="description">Light rain</p>
+            </div>
+            
+            <p class="cityname">Delhi</p>
+
+            <div class="weather-details">
+                <div class="humidity">
+                    <i class="fa-sharp fa-solid fa-droplet"></i>
+                    <div class="text">
+                        <span id="humidity">45%</span>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+
+                <div class="wind">
+                    <i class="fa-solid fa-wind"></i>
+                    <div class="text">
+                        <span id="wind-speed">12 km/h</span>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>  
+    <script src="https://kit.fontawesome.com/8cc5693dae.js" crossorigin="anonymous"></script>
+</body>
+</html>
